@@ -1,5 +1,11 @@
+# Server settings
 server.port: 5601
 server.host: "0.0.0.0"
-elasticsearch.hosts: ["http://localhost:9200"]
+
+# Elasticsearch connection
+elasticsearch.hosts: ["https://localhost:9200"]
 elasticsearch.username: "kibana_system"
-elasticsearch.password: "YOUR_KIBANA_PASSWORD"
+elasticsearch.password: "KIBANA_SYSTEM_PASSWORD" # As generated during the Kibana installation
+
+# SSL verification (for demo, we'll disable it)
+elasticsearch.ssl.verificationMode: "none"

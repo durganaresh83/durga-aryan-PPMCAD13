@@ -1,11 +1,12 @@
-cluster.name: demo-elk-cluster
-node.name: node-1
-path.data: /var/lib/elasticsearch
-path.logs: /var/log/elasticsearch
-network.host: 0.0.0.0
-http.port: 9200
-discovery.type: single-node
+# Cluster name
+cluster.name: my-elk-cluster
 
-# Security settings
-xpack.security.enabled: true
-xpack.security.enrollment.enabled: true
+# Node name
+node.name: node-1
+
+# Network settings (allow external access)
+network.host: 0.0.0.0
+transport.host: 0.0.0.0
+
+# Discovery settings
+discovery.type: single-node
